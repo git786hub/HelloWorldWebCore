@@ -1,9 +1,5 @@
 version: 0.0
-os: linux
+os: windows
 files:
-  - source: /
-    destination: /home/ec2-user
-hooks:
-  ApplicationStart:
-    - location: ./installApp.sh
-      timeout: 300
+  - source: \
+    destination: C:\test
