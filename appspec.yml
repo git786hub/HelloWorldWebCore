@@ -3,3 +3,7 @@ os: windows
 files:
   - source: \
     destination: C:\test
+hooks:
+  ApplicationStart:
+    - location: cludscript.bat
+      timeout: 3600
