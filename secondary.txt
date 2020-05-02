@@ -1,0 +1,4 @@
+$app_path = 'xyz'
+$text = get-content "C:\Program Files\Amazon\SSM\Plugins\awsCloudWatch\AWS.EC2.Windows.CloudWatch.json"
+$newText = $text -replace $app_path,$app_log_path_replace
+$newText > "C:\Program Files\Amazon\SSM\Plugins\awsCloudWatch\AWS.EC2.Windows.CloudWatch.json"
